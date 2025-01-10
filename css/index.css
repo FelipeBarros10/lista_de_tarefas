@@ -64,6 +64,7 @@
 .content-list{
   width: 100%;
   background-color: aliceblue;
-  min-height: 200px;
+  min-height: 300px;
   margin-top: 50px;
+  overflow-y: auto;
 }
