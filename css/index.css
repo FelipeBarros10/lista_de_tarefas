@@ -153,3 +153,16 @@
 .routine {
   background-color: rgb(255, 230, 2);
 }
+
+@media screen and (max-width: 1270px) {
+  .content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .content {
+    width: 100%;
+  }
+}
+
