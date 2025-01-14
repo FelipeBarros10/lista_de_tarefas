@@ -1,13 +1,15 @@
-
-*{
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DM Sans", serif;
 }
 
-
-
-.main,.content,.header, .input{
+.main,
+.content,
+.header,
+.input {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -15,36 +17,35 @@
   align-items: center;
 }
 
-.main{
+.main {
   margin-top: 5%;
-  
 }
 
-.content{
+.content {
   background-color: rgb(23, 2, 61);
   padding: 20px;
   width: 33%;
   display: flex;
 }
 
-
-.header h2{
+.header h2 {
   color: white;
-  font-size: 27px;
+  font-size: 32px;
 }
 
-.input{
+.input {
   margin-top: 20px;
   width: 100%;
   flex-direction: row;
 }
 
-.input input{
+.input input {
   width: 70%;
   outline: none;
+ 
 }
 
-.input button{
+.input button {
   width: 30%;
   margin-left: 5px;
   background-color: chartreuse;
@@ -52,19 +53,103 @@
   font-weight: bold;
 }
 
-.input input, .input button{
+.input input,
+.input button {
   border-radius: 5px;
-  padding: 3px;
+  padding: 10px;
   cursor: pointer;
+  font-size: 15px;
 }
-.content, .content-list{
+.content,
+.content-list {
   border-radius: 10px;
 }
 
-.content-list{
+.content-list {
   width: 100%;
   background-color: aliceblue;
   min-height: 300px;
   margin-top: 50px;
   overflow-y: auto;
+}
+
+.listArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listArea span {
+  font-size: 20px;
+}
+
+.listArea li {
+  list-style-type: none;
+  border: 1px solid #121212;
+  width: 80%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 7px;
+  position: relative;
+  transition: display ease 1s;
+}
+
+.listArea input {
+  margin-right: 10px;
+}
+
+.listArea button {
+  display: none;
+  position: sticky;
+  left: 90%;
+  bottom: 7px;
+  background-color: red;
+  border: none;
+  padding: 10px;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 10px;
+  transition: background-color ease 0.5s, color ease 0.5s;
+}
+
+.listArea li:hover button {
+  display: inline-block;
+}
+
+.listArea button:hover {
+  background-color: #fff;
+  color: red;
+}
+
+.listArea select {
+  margin-left: 35%;
+  appearance: none;
+  width: 23%;
+  outline: none;
+  align-items: center;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: red;
+  text-align: center;
+  color: #ffff;
+}
+
+.li-checked {
+  background-color: #ccc;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.important{
+  background-color: rgb(134, 88, 2);
+}
+
+.routine {
+  background-color: rgb(255, 230, 2);
 }
